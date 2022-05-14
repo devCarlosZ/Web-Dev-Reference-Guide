@@ -14,7 +14,7 @@
 
   <body>
     <nav id="navbar">
-      <header>HTML</header>
+      <header><code>HTML</code></header>
       <ul>
         <a class="nav-link" href="#Introduction" rel="internal"
           ><li>Introduction</li></a
@@ -74,30 +74,35 @@
           </p>
           <li>
             All HTML documents must start with a document type declaration:
-            &lt!DOCTYPE html&gt.
+            <code>&lt;!DOCTYPE html&gt;</code>.
           </li>
           <li>
-            The HTML document itself begins with &lthtml&gt and ends with
-            &lt/html&gt.
+            The HTML document itself begins with <code>&lt;html&gt;</code> and
+            ends with <code>&lt;/html&gt;</code>.
           </li>
           <li>
-            The visible part of the HTML document is between &ltbody&gt and
-            &lt/body&gt.
+            The visible part of the HTML document is between
+            <code>&ltbody&gt</code> and <code>&lt;/body&gt;</code>.
           </li>
-          <code>
-            &lt!DOCTYPE html&gt &lthtml&gt &ltbody&gt &lth1&gtMy First
-            Heading&lt/h1&gt &ltp&gtMy first paragraph.&lt/p&gt &lt/body&gt
-            &lt/html&gt
-          </code>
+          <pre><code id="block">
+            &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;body&gt;
+                  &lt;h1&gt;My First Heading&lt;/h1&gt;
+                  &lt;p&gt;My first paragraph.&lt;/p&gt;
+                  &lt;/body&gt;
+              &lt;/html&gt;
+            </code></pre>
         </article>
       </section>
       <section class="main-section" id="HTML_Headings">
         <header>HTML Headings</header>
         <article>
           <p>
-            HTML headings are defined with the &lth1&gt to &lth6&gt tags.
-            &lth1&gt defines the most important heading. &lth6&gt defines the
-            least important heading.
+            HTML headings are defined with the <code>&lt;h1&gt;</code> to
+            <code>&lt;h6&gt;</code> tags. <code>&lt;h1&gt;</code> defines
+            themost important heading. <code>&lt;h6&gt;</code> defines the least
+            important heading.
           </p>
           <li>
             Heading information may be used by user agents, for example, to
@@ -108,72 +113,81 @@
             font-size property instead.
           </li>
           <li>
-            Avoid skipping heading levels: always start from &lth1&gt, next use
-            &lt2&gt and so on.
+            Avoid skipping heading levels: always start from
+            <code>&lt;h1&gt;</code>, next use <code>&lt;h2&gt;</code> and so on.
           </li>
           <li>
-            You should consider avoiding using &lth1&gt more than once on a
-            page. See Defining sections in Using HTML sections and outlines for
-            more information.
+            You should consider avoiding using <code>&lt;h1&gt;</code> more than
+            once on a page. See Defining sections in Using HTML sections and
+            outlines for more information.
           </li>
-          <code>
-            &lth1&gtThis is heading 1&lt/h1&gt &lth2&gtThis is heading
-            2&lt/h2&gt &lth3&gtThis is heading 3&lt/h3&gt
-          </code>
+          <pre><code id="block">
+            &lt;h1&gt;This is heading 1.&lt;/h1&gt;
+            &lt;h2&gtThis is heading 2.&lt;/h2&gt;
+            &lt;h3&gt;This is heading 3.&lt;/h3&gt;
+          </code></pre>
         </article>
       </section>
       <section class="main-section" id="HTML_Paragraphs">
         <header>HTML Paragraphs</header>
         <article>
-          <p>HTML paragraphs are defined with the &ltp&gt tag.</p>
-          <code>
-            &ltp&gtThis is a paragraph.&lt/p&gt &ltp&gtThis is another
-            paragraph.&lt/p&gt
-          </code>
+          <p>
+            HTML paragraphs are defined with the <code>&lt;p&gt;</code> tag.
+          </p>
+          <pre><code id="block">
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+            &lt;p&gt;This is another paragraph.&lt;/p&gt;
+          </code></pre>
         </article>
       </section>
       <section class="main-section" id="HTML_Links">
         <header>HTML Links</header>
         <article>
-          <p>HTML links are defined with the &lta&gt tag.</p>
-          <code>
-            &lta href="https://www.w3schools.com"&gtThis is a link&lt/a&gt
-          </code>
+          <p>HTML links are defined with the <code>&lt;a&gt;</code> tag.</p>
+          <pre><code id="block">
+            &lt;a href="https://www.w3schools.com"&gt;This is a link &lt;/a&gt;.
+          </code></pre>
         </article>
       </section>
       <section class="main-section" id="HTML_Images">
         <header>HTML Images</header>
         <article>
           <p>
-            HTML images are defined with the &ltimg&gt tag. The source file
-            (src), alternative text (alt), width, and height are provideed as
-            atrributes.
+            HTML images are defined with the <code>&lt;img&gt;</code> tag. The
+            source file (<code>src</code>), alternative text (<code>alt</code>),
+            width, and height are provideed as atrributes.
           </p>
-          <code>
-            &ltimg src="w3schools.jpg" alt="W3Schools.com" width="104"
-            height="142"&gt
-          </code>
+          <pre><code id="block">
+            &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;
+          </code></pre>
         </article>
       </section>
       <section class="main-section" id="HTML_Buttons">
         <header>HTML Buttons</header>
         <article>
-          <p>HTML buttons are defined with the &ltbutton&gt tag.</p>
-          <code> &ltbutton&gtClick me&lt/button&gt </code>
+          <p>
+            HTML buttons are defined with the <code>&lt;button&gt;</code> tag.
+          </p>
+          <pre><code id="block"> &lt;button&gt;Click me&lt;/button&gt; </code></pre>
         </article>
       </section>
       <section class="main-section" id="HTML_List">
         <header>HTML List</header>
         <article>
           <p>
-            HTML list are defined with the &ltul&gt (unordered/bullet list) or
-            the &ltli&gt (ordered/numbered list) tag, followed by the &ltli&gt
+            HTML list are defined with the
+            <code>&lt;ul&gt;</code> (unordered/bullet list) or the
+            <code>&lt;li&gt;</code> (ordered/numbered list) tag, followed by the
+            <code>&lt;li&gt;</code>
             tags (list items).
           </p>
-          <code>
-            &ltul> &ltli&gtCoffee&lt/li&gt &ltli&gtTea&lt/li&gt
-            &ltli&gtMilk&lt/li&gt &lt/ul>
-          </code>
+          <pre><code id="block">
+            &lt;ul&gt;
+              &lt;li&gt;Coffee&lt;/li&gt;
+              &lt;li&gt;Tea&lt;/li&gt;
+              &lt;li&gt;Milk&lt;/li&gt;
+            &lt;/ul&gt;
+          </code></pre>
         </article>
       </section>
       <section class="main-section" id="Reference">
